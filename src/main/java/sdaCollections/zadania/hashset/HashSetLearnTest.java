@@ -1,6 +1,8 @@
 package sdaCollections.zadania.hashset;
 
 
+import java.util.HashSet;
+import java.util.Set;
 
 public class HashSetLearnTest {
 
@@ -33,11 +35,12 @@ public class HashSetLearnTest {
 
     public void zwróćSeta(){
         System.out.println("III test: "
-                + hashSetLearn.zwróćSeta(40,70));
+                + hashSetLearn.zwróćSeta(20,70));
     }
 
     public void usuńZSeta(){
-        hashSetLearn.usuńZSeta(hashSetLearn.zwróćSeta(40,70));
+
+        hashSetLearn.usuńZSeta(hashSetLearn.zwróćSeta(20,70));
         System.out.println("IV test: " + hashSetLearn.setOsob);
     }
 

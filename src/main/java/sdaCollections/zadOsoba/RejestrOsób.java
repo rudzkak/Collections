@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Optional;
 
 public class RejestrOsób {
     private List<Osoba> listaOsób = new ArrayList<>();
@@ -65,6 +66,10 @@ public class RejestrOsób {
           }
         }
         return najstarszy;
+    }
+
+    public Optional<Osoba> maxJava8(){
+        return listaOsób.stream().max(Comparator.comparing(osoba -> osoba.getWiek()));
     }
 
     public String toString(){

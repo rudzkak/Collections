@@ -42,17 +42,17 @@ public class HashSetLearn {
                     osobaDo = osoba;
                 }
             }
-//            Set<Osoba> set = new TreeSet<>(Osoba.BY_WIEK);
-//            for(Osoba osoba : setOsob){
-//                if(osoba.getWiek()>= osobaOd.getWiek()
-//                && osoba.getWiek() <= osobaDo.getWiek()){
-//                    set.add(osoba);
-//                }
-//            }
+            Set<Osoba> set = new TreeSet<>(Osoba.BY_WIEK);
+            for(Osoba osoba : setOsob){
+                if(osoba.getWiek()>= osobaOd.getWiek()
+                && osoba.getWiek() <= osobaDo.getWiek()){
+                    set.add(osoba);
+                }
+            }
 
 
-            return setOsob.subSet(osobaOd, osobaDo);
-            //return set;
+            //return setOsob.subSet(osobaOd, osobaDo);
+            return set;
         } else {
             System.out.println("Błędne dane wejściowe");
             return null;
