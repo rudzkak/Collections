@@ -1,6 +1,7 @@
 package sdaCollections;
 
 import java.util.Comparator;
+import java.util.Objects;
 
 public class Produkt {
 
@@ -35,4 +36,18 @@ public class Produkt {
             return Integer.compare(p1.getWaga(), p2.getWaga());
         }
     };
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Produkt produkt = (Produkt) o;
+        return waga == produkt.waga &&
+                Objects.equals(nazwa, produkt.nazwa);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nazwa, waga);
+    }
 }
