@@ -1,0 +1,14 @@
+package sdaCollections.zadania.praca;
+
+public enum Zadania {
+
+    DOSTARCZANIE_PACZEK,
+    KONTAKT_Z_KLIENTEM,
+    SORTOWANIE_PACZEK,
+    LADOWANIE_SAMOCHODU,
+    ROZWIĄZYWANIE_KONFLIKTÓW,
+    PRZYJMOWANIE_NOWYCH_PRACOWNIKÓW,
+    ODBIERANIE_PACZEK
+
+
+}
